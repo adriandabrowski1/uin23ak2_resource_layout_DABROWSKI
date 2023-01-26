@@ -3,11 +3,8 @@
 
 // buttons.forEach(button => {
 //   button.addEventListener("click", function() {
-//     // get the id of the button that was clicked
 //     const buttonId = this.id
-//     // find the corresponding resource object
 //     const resource = resources.find(res => res.category.toLowerCase() === buttonId.toLowerCase())
-//     // update the resource container with the text and sources
 //     resourceContainer.innerHTML = `<h2>${resource.category}</h2>
 //                                   <p>${resource.text}</p>
 //                                   <h3>Sources:</h3>

@@ -48,7 +48,7 @@ button {
     margin-right: 20px;
     margin-top: 25px;
     border:1px solid;
-    background-color: rgb(206, 195, 195);
+    background-color: var(--grey);
     padding: 20px;
     color: var(--white);
     margin-bottom: -1px;
@@ -69,9 +69,25 @@ main {
     
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     body{
         width: 100%;
+    }
+
+    nav {
+        display: grid;
+        max-width: 500px;
+        justify-content: center;
+
+    }
+
+    main {
+        max-width: 430px;
+        justify-content: center;
+    }
+
+    header {
+        max-width: 430px;
     }
 }
 
