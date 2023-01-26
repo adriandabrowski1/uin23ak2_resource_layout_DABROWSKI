@@ -1,3 +1,59 @@
+// const buttons = document.querySelectorAll(".category-button")
+// const resourceContainer = document.getElementById("resource-container")
+
+// buttons.forEach(button => {
+//   button.addEventListener("click", function() {
+//     // get the id of the button that was clicked
+//     const buttonId = this.id
+//     // find the corresponding resource object
+//     const resource = resources.find(res => res.category.toLowerCase() === buttonId.toLowerCase())
+//     // update the resource container with the text and sources
+//     resourceContainer.innerHTML = `<h2>${resource.category}</h2>
+//                                   <p>${resource.text}</p>
+//                                   <h3>Sources:</h3>
+//                                   <ul>
+//                                     ${resource.sources.map(source => `<li><a href="${source.url}">${source.title}</a></li>`).join("")}
+//                                   </ul>`
+//   })
+// })
+
+function html(){
+    main.innerHTML = `<h2>${resources[0].category}</h2><p>${resources[0].text}</p><ul>`
+    resources[0].sources.map(li => {
+        main.innerHTML += `<li><a href=${li.url}>${li.title}</a></li>`
+    })
+    main.innerHTML += `</ul>` 
+}
+function css(){
+    main.innerHTML = `<h2>${resources[1].category}</h2><p>${resources[1].text}</p><ul>`
+    resources[1].sources.map(li => {
+        main.innerHTML += `<li><a href=${li.url}>${li.title}</a></li>`
+    })
+    main.innerHTML += `</ul>` 
+}
+function javascript(){
+    main.innerHTML = `<h2>${resources[2].category}</h2><p>${resources[2].text}</p><ul>`
+    resources[2].sources.map(li => {
+        main.innerHTML += `<li><a href=${li.url}>${li.title}</a></li>`
+    })
+    main.innerHTML += `</ul>` 
+}
+function react(){
+    main.innerHTML = `<h2>${resources[3].category}</h2><p>${resources[3].text}</p><ul>`
+    resources[3].sources.map(li => {
+        main.innerHTML += `<li><a href=${li.url}>${li.title}</a></li>`
+    })
+    main.innerHTML += `</ul>` 
+}
+function headless(){
+    main.innerHTML = `<h2>${resources[4].category}</h2><p>${resources[4].text}</p><ul>`
+    resources[4].sources.map(li => {
+        main.innerHTML += `<li><a href=${li.url}>${li.title}</a></li>`
+    })
+    main.innerHTML += `</ul>` 
+}
+
+
 const resources = [
     {
         category: "HTML",

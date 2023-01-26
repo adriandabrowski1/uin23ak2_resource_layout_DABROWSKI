@@ -1,0 +1,77 @@
+:root {
+    --max-width: 1200px;
+    --lightblue: #25dfe6;
+    --white: #fff;
+    --grey: #808080;
+}
+
+div.container {
+width: 100%;
+max-width: var(--max-width);
+margin: 0 auto;
+
+}
+
+body {
+    background-color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    /* margin-left: 20%; */
+    
+}
+
+button h2 {
+    text-transform: uppercase;
+}
+header {
+    /* margin-left: 20%; */
+    /* margin-top: 7%;   */
+    border: 1px solid; 
+    font-size: large;
+    padding: 25px;
+    /* width: 80%; */
+    
+}
+
+header h1 {
+    text-transform: uppercase;
+}
+
+button {
+    display: flex;
+    flex-direction: column;
+    /* margin: 0px; */
+    margin-right: 20px;
+    margin-top: 25px;
+    border:1px solid;
+    background-color: rgb(206, 195, 195);
+    padding: 20px;
+    color: var(--white);
+    margin-bottom: -1px;
+    border: none;
+
+
+}
+
+button:focus {
+    background-color: var(--lightblue);
+    
+}
+main {
+    border: 1px solid;
+    border-top: 10px solid var(--lightblue);
+    padding: 1.5rem;
+    padding-bottom: 70px;
+    
+}
+
+@media (max-width: 500px) {
+    body{
+        width: 100%;
+    }
+}
+
